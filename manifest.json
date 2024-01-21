@@ -4,5 +4,24 @@
     "version": "1.0.0",
     "action": {
         "default_popup": "index.html"
-    }
+    },
+    "background": {
+        "service_worker": "src/background/service-worker.ts",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "src/content_script.ts"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ]
 }
