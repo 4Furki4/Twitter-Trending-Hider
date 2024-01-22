@@ -1,14 +1,74 @@
+:root{
+  color-scheme: dark light;
+}
+@font-face {
+  font-family: 'Geist Regular';
+  src: url('/src/Geist/Geist-Regular.otf') format('opentype'),
+        url('/src/Geist/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Bold';
+  src: url('/src/Geist/Geist-Bold.otf') format('opentype'),
+        url('/src/Geist/Geist-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Italic';
+  src: url('/src/Geist/Geist-Italic.otf') format('opentype'),
+        url('/src/Geist/Geist-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Geist Bold Italic';
+  src: url('/src/Geist/Geist-BoldItalic.otf') format('opentype'),
+        url('/src/Geist/Geist-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Geist Light';
+  src: url('/src/Geist/Geist-Light.otf') format('opentype'),
+        url('/src/Geist/Geist-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Light Italic';
+  src: url('/src/Geist/Geist-LightItalic.otf') format('opentype'),
+        url('/src/Geist/Geist-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Geist Medium';
+  src: url('/src/Geist/Geist-Medium.otf') format('opentype'),
+        url('/src/Geist/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Medium Italic';
+  src: url('/src/Geist/Geist-MediumItalic.otf') format('opentype'),
+        url('/src/Geist/Geist-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Geist SemiBold';
+  src: url('/src/Geist/Geist-SemiBold.otf') format('opentype'),
+        url('/src/Geist/Geist-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Geist Regular', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 400px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  padding-bottom: 1rem;
 }
